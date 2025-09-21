@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+</head>
+<body>
+	<h1>Book store</h1>
+	<!-- Navbar -->
+	<div th:replace="~{fragments/home-navbar :: frg-home-navbar}"></div>
+
+
+	<!-- Main Part -->
+	<main class="container-fluid">
+		<section>
+			<div class="text-center my-5 ">
+				<h1>WELCOME TO NEW BOOK STORE</h1>
+				
+				<p class="mt-3 mb-4 px-5">
+				    Welcome to our Book Store! Discover a wide collection of
+					books across various genres including fiction, non-fiction,
+					self-help, academic, and more. Whether you are a passionate reader,
+					a student, or someone exploring new interests, our store is
+					designed to meet your needs. With easy navigation, you can browse
+					available books, manage your personal collection, and register new
+					books seamlessly. We aim to provide a simple yet engaging platform
+					where knowledge meets convenience. Start exploring today, build
+					your digital library, and let your reading journey grow with us.
+					Your next favorite book is just a click away!
+				</p>
+					
+				<img alt="banner Image" src="/images/banner_image.jpg" 
+				     class="img-fluid w-75 mt-4 shadow rounded">
+			</div>
+		</section>
+	</main>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+</body>
+</html>
